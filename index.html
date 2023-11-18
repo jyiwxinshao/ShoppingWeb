@@ -30,30 +30,30 @@
 						<span></span>
 						<ol class="zuo">
 							<li class="con">护肤</li>
-							<li>·洁面</li>
-							<li>·爽肤水</li>
-							<li>·精华</li>
-							<li>·乳液</li>
+							<li class="dom">·洁面</li>
+							<li class="dom">·爽肤水</li>
+							<li class="dom">·精华</li>
+							<li class="dom">·乳液</li>
 							<li class="con">彩妆</li>
-							<li>·BB霜</li>
-							<li>·卸妆</li>
-							<li>·粉底液</li>
+							<li class="dom">·BB霜</li>
+							<li class="dom">·卸妆</li>
+							<li class="dom">·粉底液</li>
 							<li class="con">香氛</li>
-							<li>·女士香水</li>
-							<li>·男士香水</li>
-							<li>·中性香水</li>
+							<li class="dom">·女士香水</li>
+							<li class="dom">·男士香水</li>
+							<li class="dom">·中性香水</li>
 						</ol>
 						<ol class="you">
 							<li class="con">男士专区</li>
-							<li>·爽肤水</li>
-							<li>·洁面</li>
-							<li>·面霜</li>
-							<li>·精华</li>
+							<li class="dom">·爽肤水</li>
+							<li class="dom">·洁面</li>
+							<li class="dom">·面霜</li>
+							<li class="dom">·精华</li>
 							<li class="con">热门搜索</li>
-							<li>·洗面奶</li>
-							<li>·去黑头</li>
-							<li>·隔离</li>
-							<li>·面膜</li>
+							<li class="dom">·洗面奶</li>
+							<li class="dom">·去黑头</li>
+							<li class="dom">·隔离</li>
+							<li class="dom">·面膜</li>
 						</ol>
 						<img src="images/tu1.jpg" alt="">
 					</aside>
@@ -219,5 +219,16 @@
 		<a href="#">hzvtcjwn</a>
 	</div>
 	<!-- banquan end -->
+	<script>
+		var dom=document.querySelector('aside').querySelectorAll('.dom');
+		for(var i=0;i<dom.length;i++){
+			dom[i].onmouseover=function(){
+				this.style.color='black';
+			}
+			dom[i].onmouseout=function(){
+				this.style.color='white';
+			}
+		}
+	</script>
 </body>
 </html>
